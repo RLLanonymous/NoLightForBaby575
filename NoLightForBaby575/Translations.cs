@@ -5,6 +5,12 @@ namespace NoLightForBaby575
 {
     public class Translations : ITranslation
     {
+        [Description("The cassie translation played when the light are off?")]
+        public string NoLightTranslation { get; set; } = "Facility lights have been turned <color=red>off</color>.";
+        
+        [Description("The cassie translation played when the light are off?")]
+        public string LightTranslation { get; set; } = "Facility lights have been turned <color=green>on</color>.";
+        
         [Description("The message send when they try to send the commands but are not an human!")]
         public string RaptorNotAllowed { get; set; } = "Your not an human!";
         
@@ -19,5 +25,7 @@ namespace NoLightForBaby575
         
         [Description("The message send when they send the commands!")]
         public string OkZebi { get; set; } = "The lights are now off!";
+        
+        
     }
 }

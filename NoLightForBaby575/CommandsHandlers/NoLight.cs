@@ -56,11 +56,12 @@ namespace NoLightForBaby575.CommandsHandlers
 
             isBlackout = true;
             Map.TurnOffAllLights(NoLightForBaby575.Instance.Config.NoLightTime);
-            Cassie.MessageTranslated(NoLightForBaby575.Instance.Config.NoLightCassie, NoLightForBaby575.Instance.Config.NoLightTranslation, false, true, true);
+            Cassie.MessageTranslated(NoLightForBaby575.Instance.Config.NoLightCassie, NoLightForBaby575.Instance.Translation.NoLightTranslation, false, true, true);
 
             Timing.CallDelayed(NoLightForBaby575.Instance.Config.NoLightTime, () =>
             {
                 isBlackout = false;
+                Cassie.MessageTranslated(NoLightForBaby575.Instance.Config.LightCassie, NoLightForBaby575.Instance.Translation.LightTranslation, false, true, true);
             });
                 
             response = NoLightForBaby575.Instance.Translation.OkZebi;

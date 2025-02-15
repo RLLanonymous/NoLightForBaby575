@@ -29,8 +29,9 @@ namespace NoLightForBaby575
         
         [Description("The cassie played when the light are off?")]
         public string NoLightCassie { get; set; } = "Facility lights have been turned off.";
-
-        [Description("The cassie translation played when the light are off?")]
-        public string NoLightTranslation { get; set; } = "Facility lights have been turned off.";
+        
+        [Description("The cassie played when the light are off?")]
+        public string LightCassie { get; set; } = "Facility lights have been turned on!";
+        
     }
 }
